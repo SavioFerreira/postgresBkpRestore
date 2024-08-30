@@ -1,9 +1,9 @@
 # Como restaurar backup postgresql 
 
-> [!NOTE]
+> [!IMPORTANT]
 > esse procedimento é realizado para restaurar backup de projetos sql que são feitos em containers docker e sem utilização de volumes no compose.yaml
 
->[!ATTENTION]
+>[!CAUTION]
 > o procedimento deve ser realizado após a criação dos containers e criação do servidor postgres na interface do pgadmin
 
 ## Passo inicial
@@ -34,4 +34,5 @@ o aquivo.sql é aquele que foi copiado anteriormente, com o comando 'ls' é poss
 ```
 4: -$ psql -U postgres -d [nome do banco] < [arquivo.sql]
 ```
-GG, boa boa.
+> [!NOTE]
+> GG, boa boa.
